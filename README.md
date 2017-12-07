@@ -55,7 +55,7 @@ or as an input for **cbcmac-validate**.
 2 are close to digital certificates, but not quite there. We want to upgrade them to full
 fledged digital certificates. You should add behavior to your **rsa-keygen** from assignment 2 that
 will generate signatures on the thumbprint (hash) of the key file. Your RSA key generation will
-need to be augmented to take as additional optional argument **-s** which maps to a private key
+need to be augmented to take as additional optional argument **-c** which maps to a private key
 which is going to act as a CA for the generated public key. **If the argument is not given the
 generated key should sign itself**. The file storing the signature should be the same path as the
 public key except with **-casig** appended to the end.
